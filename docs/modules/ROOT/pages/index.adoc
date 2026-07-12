@@ -1,0 +1,25 @@
+= Consent Assertion
+:toc: macro
+:toc-title:
+:sectanchors:
+:sectnums:
+:sectnumlevels: 5
+
+include::partial$abstract.adoc[]
+
+*Version 1.0 Draft 12 July 2026* · xref:_version_history[]
+
+[IMPORTANT]
+=====
+This is a working draft of the first version of this specification and may be changed without warning.
+=====
+
+include::partial$common/license.adoc[]
+
+include::partial$common/contributing.adoc[]
+
+include::partial$common/foreword.adoc[]
+
+include::partial$common/toc.adoc[]
+
+include::partial$version-history.adoc[]

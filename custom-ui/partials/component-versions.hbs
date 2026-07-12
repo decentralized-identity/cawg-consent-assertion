@@ -1,0 +1,12 @@
+{{#if (or ./versions.[1] ./versions.[0].version (ne ./versions.[0].displayVersion 'default'))}}
+<ul class="versions versions--spec">
+  {{#each (specVersionNavItems ./versions ./latest)}}
+  <li class="version
+    {{~#if (eq ./kind 'current')}} is-current-release{{/if~}}
+    {{~#if (eq ./kind 'draft')}} is-draft-release{{/if~}}
+    {{~#if (and (eq .. @root.page.component) (eq ./v @root.page.componentVersion))}} is-current{{/if~}}">
+    <a href="{{{relativize ./v.url}}}">{{#if (eq ./kind 'current')}}<span class="version-nav-tag version-nav-tag--current"><span class="version-nav-tag-label">Current</span><span class="version-nav-tag-ver">{{./versionText}}</span></span>{{else if (eq ./kind 'draft')}}<span class="version-nav-tag version-nav-tag--draft"><span class="version-nav-tag-label">Draft</span><span class="version-nav-tag-ver">{{./versionText}}</span></span>{{else}}{{./versionText}}{{/if}}</a>
+  </li>
+  {{/each}}
+</ul>
+{{/if}}

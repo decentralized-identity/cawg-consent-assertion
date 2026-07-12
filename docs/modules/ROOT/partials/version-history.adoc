@@ -1,0 +1,8 @@
+[appendix]
+== Version history
+
+_This section is non-normative._
+
+*12 July 2026*
+
+* Initial placeholder document

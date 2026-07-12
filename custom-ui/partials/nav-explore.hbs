@@ -1,0 +1,42 @@
+<div class="nav-panel-explore{{#unless page.navigation}} is-active{{/unless}}" data-panel="explore">
+  {{#if page.component}}
+  <div class="context">
+    <span class="title">{{page.component.title}}</span>
+    <span class="version">{{#if (or page.componentVersion.version (ne page.componentVersion.displayVersion 'default'))}}{{page.componentVersion.displayVersion}}{{/if}}</span>
+  </div>
+  {{/if}}
+  <ul class="components">
+    <li class="ia-heading">
+      Assertion Specifications
+    </li>
+    {{#each site.components}}
+    {{#if (and (ne ./title "Creator Assertions Home") (endsWith ./title "Assertion") (ne ./title "Endorsement Assertion")) }}
+    <li class="component{{#if (eq this @root.page.component)}} is-current{{/if}}">
+      <div class="title"><a href="{{{relativize ./url}}}">{{{./title}}}</a></div>
+      {{> component-versions}}
+    </li>
+    {{/if}}
+    {{/each}}
+
+    {{#each site.components}}
+    {{#if (eq ./title "Endorsement Assertion") }}
+    <li class="component{{#if (eq this @root.page.component)}} is-current{{/if}}">
+      <div class="title"><a href="{{{relativize ./url}}}">{{{./title}}}</a></div>
+      {{> component-versions}}
+    </li>
+    {{/if}}
+    {{/each}}
+
+    <li class="ia-heading">
+      Other Documents
+    </li>
+    {{#each site.components}}
+    {{#unless (or (eq ./title "Creator Assertions Home") (endsWith ./title "Assertion")) }}
+    <li class="component{{#if (eq this @root.page.component)}} is-current{{/if}}">
+      <div class="title"><a href="{{{relativize ./url}}}">{{{./title}}}</a></div>
+      {{> component-versions}}
+    </li>
+    {{/unless}}
+    {{/each}}
+  </ul>
+</div>

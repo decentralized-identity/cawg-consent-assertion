@@ -1,0 +1,6 @@
+[#consent_profiles]
+== Domain-specific consent profiles
+
+include::overview.adoc[]
+
+include::identity-consent.adoc[]

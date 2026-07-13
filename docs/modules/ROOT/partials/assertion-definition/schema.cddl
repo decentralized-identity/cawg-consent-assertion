@@ -1,0 +1,24 @@
+; Consent assertion structure (illustrative, not yet normative)
+
+consent-map = {
+    "entries"          : $consent-entries-map,
+    ? "registry_uri"   : tstr .size (1..max-tstr-length),
+    ? "metadata"       : $assertion-metadata-map
+}
+
+consent-entries-map = {
+    ? "cawg.ai_training_and_mining"    : $consent-category-entry,
+    ? "cawg.licensing_posture"         : $consent-category-entry,
+    ? "cawg.derivative_works"          : $consent-category-entry,
+    ? "cawg.ethical_restrictions"      : $consent-category-entry,
+    ? "cawg.compensation_model"        : $consent-category-entry,
+    ? "cawg.revocation_status"         : $consent-category-entry,
+    ? "cawg.precedence"                : $consent-category-entry,
+    * tstr => any    ; allow for domain-specific consent categories
+}
+
+consent-category-entry = {
+    "value"            : tstr .size (1..max-tstr-length),
+    ? "constraint_info": tstr .size (1..max-tstr-length),
+    ? "registry_ref"   : tstr .size (1..max-tstr-length)
+}

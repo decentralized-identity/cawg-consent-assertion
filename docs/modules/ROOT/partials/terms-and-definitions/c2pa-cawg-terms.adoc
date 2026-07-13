@@ -1,0 +1,33 @@
+=== Terms from C2PA and CAWG specifications
+
+The following terms are used in this specification with the meanings defined in the referenced specifications.
+Where this specification addresses the same concept in a consent-specific context, any narrowing or clarification is noted.
+
+==== Actor
+
+A human or non-human (hardware or software) participant in the C2PA ecosystem.
+Defined in the C2PA technical specification.
+This specification uses “actor” only when referring to the C2PA concept (e.g., “named actor” in the context of a https://cawg.io/identity/[_CAWG identity assertion_]).
+Where this specification addresses the human individuals whose consent is being declared, it uses the terms “creator,” “rights holder,” or “performer” as defined in xref:consent_defined_terms[xrefstyle=full].
+
+==== Assertion
+
+Labelled data within a C2PA Manifest representing a declaration about an asset.
+Defined in link:++https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html#_assertions++[Section 6] of the C2PA technical specification.
+Consent assertions as defined in this specification are a specific type of gathered assertion.
+
+==== C2PA Manifest
+
+A digitally signed and tamper-evident data structure that references a set of assertions concerning a C2PA asset.
+Defined in link:++https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html#_manifests++[Section 11] of the C2PA technical specification.
+
+==== Gathered assertion
+
+An assertion whose content is provided by an actor other than the generator product signer of the C2PA Manifest.
+Defined in the C2PA technical specification.
+Consent assertions as defined in this specification are expressed as gathered assertions.
+
+==== Named actor
+
+An actor whose identity is documented through a CAWG identity assertion.
+Defined in the link:++https://cawg.io/identity/1.2/#_named_actor++[CAWG identity assertion specification].

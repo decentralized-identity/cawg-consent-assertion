@@ -1,0 +1,10 @@
+=== Compensation model
+
+*Category identifier:* `cawg.compensation_model`
+
+*What it expresses:* The type of compensation structure.
+Not the specific amounts, but the model, so platforms can understand the declared compensation structure and support interoperability with systems that may implement compensation workflows.
+
+*Values:* `FLAT_FEE` | `REVENUE_SHARE` | `PER_USE` | `CONTACT_FOR_TERMS`
+
+This specification does not define allocation or reconciliation of compensation across multiple rights holders.

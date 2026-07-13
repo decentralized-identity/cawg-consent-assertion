@@ -1,0 +1,16 @@
+[#consent_assertion_overview]
+=== Overview
+
+A consent assertion SHALL have a label of `cawg.consent`.
+
+A consent assertion SHALL be expressed as a gathered assertion within a C2PA Manifest, as described in the C2PA Claim schema.
+
+The consent assertion MAY be repeated to express consent declarations from distinct rights holders or named actors for the same asset.
+
+If multiple consent assertions appear in the same C2PA Manifest, they SHALL be given unique labels as described by Section 6.4, “Multiple instances,” of the C2PA technical specification.
+
+Consent assertions may express declarations from two distinct perspectives: a *creator consent assertion* expresses permissions and restrictions declared by the creator or rights holder of the asset, and a *subject consent assertion* expresses permissions and restrictions declared by a human subject whose identity is embodied in the asset.
+Both are expressed using the same structural pattern and may coexist within the same manifest, each attributable to a distinct named actor via the identity assertion pattern described in xref:consent_use_with_identity[xrefstyle=full].
+
+NOTE: This specification normatively defines creator consent categories (xref:consent_asset_categories[xrefstyle=full]).
+Subject consent categories are anticipated as a future extension and are described illustratively in xref:consent_profiles[xrefstyle=full].

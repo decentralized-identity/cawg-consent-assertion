@@ -1,0 +1,18 @@
+=== Derivative works policy
+
+*Category identifier:* `cawg.derivative_works`
+
+*What it expresses:* Whether modifications, remixes, and adaptations of the asset are permitted.
+
+*Values:* `PROHIBITED` | `CONDITIONAL` | `PERMITTED`
+
+The `constraint_info` field MAY include flags for conditions such as: attribution required, revenue share required, separate agreement required, parody/satire stance.
+
+Where derivative works are permitted, the creator MAY declare accepted use purposes (e.g., parody, satire, news_reporting, editorial, commercial, educational) via `constraint_info` or at the registry.
+A downstream creator producing a derivative work MAY declare the intended use purpose of that derivative within its own consent or provenance assertions.
+This specification does not define how such declarations are verified or adjudicated.
+
+NOTE: When a derivative work is distributed as a C2PA asset, the C2PA ingredient manifest mechanism provides the structural link between the derivative and the original work.
+The original work's consent assertions, including its registry URI, remain accessible through the ingredient chain.
+This specification does not require a derivative work's consent assertion to reference the original work's registry, as that linkage is provided by the C2PA provenance architecture.
+However, where a downstream creator claims a legitimate use purpose (e.g., parody, commentary), the presence of a traceable ingredient reference to the original work strengthens the evidentiary value of that claim.

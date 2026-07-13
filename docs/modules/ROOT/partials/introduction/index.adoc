@@ -1,0 +1,11 @@
+== Introduction
+
+_This section is non-normative._
+
+include::motivation.adoc[]
+
+include::consent-domains.adoc[]
+
+include::scope.adoc[]
+
+include::legislative-context.adoc[]

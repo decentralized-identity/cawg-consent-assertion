@@ -1,0 +1,65 @@
+[appendix]
+== Terminology mapping
+
+_This section is non-normative._
+
+This appendix is provided for implementer convenience.
+
+The following table maps the human-role terminology used in this specification to the related C2PA and CAWG terms, and clarifies each term's conceptual function within the consent framework.
+
+[cols="1,2,1"]
+|===
+| Term | Conceptual role | Defined in
+
+| Actor
+| Any participant in a C2PA workflow (human, hardware, or software)
+| C2PA technical specification
+
+| Named actor
+| An actor whose identity is documented through an identity assertion
+| https://cawg.io/identity/[_CAWG identity assertion_]
+
+| Creator
+| Human originator of creative work who may declare asset consent
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Rights holder
+| Party making a consent declaration (does not adjudicate legal ownership)
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Performer
+| Human whose identity is embodied in or associated with a digital asset
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Consent assertion
+| C2PA gathered assertion container (labeled `cawg.consent`)
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Consent declaration
+| Substantive expression of permissions and restrictions
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Consent category
+| Single dimension of permission within a consent assertion
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Hard-bound signal
+| On-asset consent declaration embedded in the C2PA Manifest
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Reference-bound signal
+| Registry-referenced consent state external to the asset
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Trust registry
+| External system maintaining current consent state
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+
+| Digital replica
+| Computer-generated representation of a recognizable person's identifiable characteristics
+| This specification (xref:consent_defined_terms[xrefstyle=full])
+|===
+
+NOTE: The terms “creator,” “rights holder,” and “performer” describe roles in the context of consent declarations.
+A single individual may occupy more than one role (e.g., a performer who is also the creator of the asset).
+These roles are not mutually exclusive.

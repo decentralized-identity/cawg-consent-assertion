@@ -1,0 +1,8 @@
+[#consent_terms]
+== Standard terms and definitions
+
+include::conformance-keywords.adoc[]
+
+include::c2pa-cawg-terms.adoc[]
+
+include::defined-terms.adoc[]

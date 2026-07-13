@@ -1,0 +1,53 @@
+== Scope of standardization
+
+=== In scope (CAWG)
+
+* Defining consent categories and their enumerated values
+* Defining field structure for consent declarations
+* Defining how consent is represented as a gathered assertion
+* Defining optional reference to external systems via URI
+* Aligning consent assertions with existing CAWG assertion patterns
+
+=== Out of scope (implementation-specific)
+
+* How consent is evaluated at runtime
+* How consent is enforced
+* How conflicts between consent declarations are resolved
+* How systems interpret or act upon consent declarations
+* How registries operate internally
+* How trust is established between registries and consuming platforms
+* The legal enforceability of any particular consent declaration
+* How selective disclosure of identity, metadata, or consent-related information is determined or enforced
+* Any runtime evaluation, scoring, or decision-making processes derived from consent declarations
+
+*Guiding constraint:* If a statement answers “what can a creator declare?” it is in scope.
+If a statement answers “how does the system decide or act?” it is out of scope.
+
+The presence of a consent assertion in a manifest does not imply that any system is required to honor, enforce, or recognize that declaration.
+
+=== Out of scope (legal frameworks)
+
+The following are out of scope because they are governed by applicable law in the jurisdiction where content creation, distribution, or use occurs:
+
+* The legal enforceability of any particular consent declaration
+* How conflicts between consent declarations are resolved when multiple parties have governing interests
+* The legal duty of any party to honor, enforce, or recognize a consent declaration
+* How consent is legally interpreted or acted upon by any party
+
+=== Out of scope (implementation)
+
+The following are out of scope because they are determined by the design of specific systems implementing this specification:
+
+* How registries operate internally
+* How trust is established between registries and consuming platforms
+* How selective disclosure of identity, metadata, or consent-related information is technically determined or enforced
+* How consent is evaluated at runtime
+* How consent is enforced through technical mechanisms
+* How systems technically interpret or act upon consent declarations
+* Any runtime evaluation, scoring, or decision-making processes derived from consent declarations
+
+*Guiding constraint:* If a statement answers “what can a creator declare?” it is in scope.
+If a statement answers “how does the system decide or act?” or “what legal force does this declaration carry?” it is out of scope.
+
+The presence of a consent assertion in a manifest does not imply that any system is required to honor, enforce, or recognize that declaration.
+Such requirements arise from applicable law and from contractual or platform-level commitments, not from this specification.

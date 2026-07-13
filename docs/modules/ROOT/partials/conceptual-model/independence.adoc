@@ -1,0 +1,16 @@
+=== Independence from provenance lifecycle
+
+Consent assertions SHALL NOT be treated as part of the provenance event history.
+
+Provenance is append-only and reflects historical transformations.
+Consent is mutable and reflects current permission state, including:
+
+* updates to permissions
+* revocation of prior permissions
+* expiration of previously granted rights
+* modification of conditions or restrictions
+
+Binding consent to the provenance lifecycle would create false historical records and break the append-only integrity of the provenance chain.
+Consent SHOULD be capable of evolving independently of the asset's provenance history.
+
+*Design principle:* Consent is declared alongside provenance, not inside it.

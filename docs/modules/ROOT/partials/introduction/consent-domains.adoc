@@ -1,0 +1,51 @@
+[#consent_domains]
+=== Consent domains
+
+_This section is non-normative._
+
+Consent in the context of digital media spans at least three related but distinct domains:
+
+[upperalpha]
+. *Asset consent:* Permissions attached to a digital asset.
+What can be done with the file itself: training, licensing, derivatives, prohibited contexts, compensation terms.
+. *Creator consent:* Permissions made by the asserted creator of an asset regarding use of their creative work.
+What can be done with the asset by the person who made it.
+[.line-through]#Permissions made by the asserted creator of an asset which applies to their consent regarding use of their likeness, voice, movement, or persona.
+What can be done with a person when their identity is embodied in or associated with a digital asset.#
+. *Subject consent:* Permissions not made by the asserted creator of an asset but by the subject of an asset who asserts their consent regarding the capture and use of their likeness, voice, movement, or persona.
+What can be done with a person when their identity is embodied in or associated with a digital asset.
+. *Access and purpose consent:* Permissions attached to disclosure, access, or use in a governed context (e.g., a parent authorizing a school to use a child's photo, medical record access controls, classified document handling).
+. [.delegated-consent]##*Delegated consent:* Permissions not made by the asserted creator of an asset but by a delegated party (human or authorized AI agentfootnote:[In the future, AI may be given power-of-attorney or represent a person within a specific domain (e.g. an actor's agent or an enterprise AI social media manager).]) of the creator or subject who acts on behalf of them to assert their consent regarding use of their likeness, voice, movement, or persona.
+What can be done with a person when their identity is embodied in or associated with a digital asset.##
++
+[NOTE]
+====
+Delegated consent is in dark green, not crossed out.
+It is still in play.
+====
+
+This specification primarily addresses *asset consent* (Domain A).
+Where creator consent (Domain B) or subject consent (Domain C) is expressed as a gathered assertion attached to a digital asset or digital replica, it may also be accommodated within this framework through industry-specific consent profiles (see xref:consent_profiles[xrefstyle=full]).
+
+Access and purpose consent (Domain D) is outside the scope of this specification.
+CAWG's work should remain compatible with adjacent systems addressing those concerns, but this specification does not define them.
+
+Consent declarations defined herein may inform such disclosure decisions but do not define how those decisions are evaluated, enforced, or verified.
+Such behavior is implementation-specific and may be governed by external identity, credential, or policy frameworks.
+
+NOTE: A single digital asset may involve consent interests across multiple domains simultaneously.
+For example, a video production may involve asset consent from the production company, identity consent from multiple performers, and access restrictions from the original distributor.
+The consent assertion framework accommodates multiple consent declarations within the same manifest, each attributable to a distinct named actor via the identity assertion pattern described in xref:consent_use_with_identity[xrefstyle=full].
+
+==== Relationship to selective disclosure
+
+While subject consent (Domain C) is out of scope for this specification, consent declarations defined herein may influence what identity, metadata, or consent-related information is disclosed in a given context.
+
+Implementations may apply selective disclosure mechanisms such that only a subset of available information is revealed based on requestor, purpose, or trust relationship.
+
+Consent declarations within this framework may be expressed as signals embedded directly in the asset (hard-bound) or as references to external systems that maintain current permission state (soft-bound).
+These concepts are defined in xref:consent_conceptual_model[xrefstyle=full].
+
+_Five dimensions of consent in an illustrated case study below: a school works with a company to take yearbook photographs._
+
+image::consent-domains/yearbook-case-study.png[Five dimensions of consent illustrated by a school yearbook photography case study,width=720,align="center"]

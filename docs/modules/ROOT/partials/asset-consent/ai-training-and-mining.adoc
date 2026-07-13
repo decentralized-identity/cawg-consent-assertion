@@ -1,0 +1,12 @@
+=== AI training and data mining
+
+*Category identifier:* `cawg.ai_training_and_mining`
+
+*What it expresses:* Whether the asset may be used for AI training, data mining, inference, or generative model development.
+Extends the existing model of the existing https://cawg.io/training-and-data-mining/1.1/[_training and data mining assertion_] with a richer set of values and the ability to reference granular conditions via registry.
+
+*Values:* `PROHIBITED` | `CONDITIONAL` | `PERMITTED`
+
+If the value is `CONDITIONAL`, the `constraint_info` field SHOULD provide summary information, and the `registry_ref` field MAY point to granular terms at the trust registry.
+
+NOTE: The relationship between this category and the existing CAWG training and data mining assertion is discussed in xref:consent_training_mining[xrefstyle=full].

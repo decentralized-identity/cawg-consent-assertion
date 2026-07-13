@@ -1,0 +1,10 @@
+=== Revocation and validity status
+
+*Category identifier:* `cawg.revocation_status`
+
+*What it expresses:* Whether consent is revocable, general trigger categories for revocation, and a pointer to a live validity-status reference.
+Provides a reference point for external systems that may maintain updated permission information.
+
+*Values:* `IRREVOCABLE` | `REVOCABLE` | `CONDITIONAL`
+
+The `registry_ref` field, if present, SHOULD point to a reference where current permission status may be obtained.

@@ -1,0 +1,40 @@
+=== Ethical and contextual restrictions
+
+*Category identifier:* `cawg.ethical_restrictions`
+
+*What it expresses:* Prohibited associations and contexts for the asset.
+Machine-readable flags for categories of use that the creator explicitly disallows.
+
+*Values:* A non-empty array of prohibited context identifiers.
+Pre-defined identifiers include:
+
+[cols="1,2"]
+|===
+| Value | Meaning
+
+| `cawg.political`
+| Use in political campaigns or political advertising
+
+| `cawg.hate_speech`
+| Use in content promoting hatred or discrimination
+
+| `cawg.surveillance`
+| Use in surveillance systems
+
+| `cawg.military`
+| Use in military applications
+
+| `cawg.adult`
+| Use in adult or sexually explicit content
+
+| `cawg.data_broker`
+| Transfer to, sale to, or ingestion by third-party data aggregation services
+|===
+
+Other string values MAY be used, subject to label restrictions described in xref:consent_categories[xrefstyle=full].
+
+Exceptions for editorial, educational, and news reporting use MAY be declared via `constraint_info` or at the registry.
+
+NOTE: Downstream creators producing content that incorporates the original asset MAY declare the purpose of their use (e.g., parody, satire, news reporting, commentary, educational) as part of their own assertion set.
+Where both an original creator's restriction declarations and a downstream creator's use-purpose declarations are accessible from their respective manifests, they provide structured, machine-readable evidence on both sides of a use dispute.
+This specification does not define how such declarations interact or are resolved.

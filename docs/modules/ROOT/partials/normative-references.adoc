@@ -1,0 +1,6 @@
+== Normative references
+
+* https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html[C2PA technical specification, version 2.4]
+* https://cawg.io/identity/[CAWG identity assertion, version 1.2]
+* https://cawg.io/training-and-data-mining/1.1/[CAWG training and data mining assertion, version 1.1]
+* https://cawg.io/metadata/[CAWG metadata assertion, version 1.2-draft]

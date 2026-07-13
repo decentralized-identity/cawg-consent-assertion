@@ -1,0 +1,50 @@
+=== Legislative context
+
+_This section is non-normative._
+
+Legislation across multiple jurisdictions is establishing requirements for machine-readable consent declarations in digital media.
+These mandates converge around three areas that intersect with CAWG and C2PA capabilities:
+
+==== Disclose AI origin
+
+Statutes in multiple jurisdictions require disclosure when content has been generated or materially modified by AI systems, typically through a combination of visible labeling and embedded technical signals that are durable and machine-detectable.
+
+In the United States, most action has occurred at the state level, with examples including California SB 942 (AI Transparency Act), the New York Stop Deepfakes Act (S6954A), and Utah HB 276.
+Comparable obligations have emerged internationally.
+The *European Union AI Act*, Article 50, requires providers of generative AI systems to mark synthetic audio, image, video, and text outputs in machine-readable form, with transparency obligations entering full force on 2 August 2026.
+*China's* Measures for Labeling AI-Generated Synthetic Content and mandatory national standard GB 45438-2025, in force since 1 September 2025, require both explicit visible labels and implicit metadata identifiers.
+*India's* Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Amendment Rules 2026, effective 20 February 2026, mandate labeling for “synthetically generated information” and impose accelerated takedown timelines on intermediaries.
+*South Korea's* AI Basic Act, effective 22 January 2026, requires labeling of generative AI outputs and special notice for synthetic media difficult to distinguish from reality.
+
+These statutes describe functional requirements (metadata, latent disclosures, detection tools) broadly consistent with the functional requirements C2PA addresses, though they generally do not name specific standards.
+
+==== Preserve provenance
+
+A second set of measures focuses on ensuring that provenance metadata, once attached, is preserved across the content lifecycle and not stripped by intermediaries.
+
+In the United States, California AB 853 extends provenance obligations to large online platforms and capture device manufacturers, including requirements to retain provenance data and provide user-visible indicators.
+Internationally, the *EU AI Act's* draft Code of Practice extends similar expectations to deployers, requiring that intrinsic provenance signals be preserved through subsequent processing and contractually protected from removal by third parties.
+*China's* Labeling Rules impose parallel obligations on online content distribution services to preserve embedded identifiers.
+
+These provisions reinforce a policy expectation that provenance metadata should be durable, non-strippable, and accessible, objectives aligned with C2PA's append-only manifest model and CAWG's assertion framework.
+
+==== Informed consent for digital identity
+
+A parallel body of legislation addresses consent for the use of human identity (likeness, voice, movement, and persona) in digital and AI-generated content.
+
+In the United States, California AB 2602 and AB 1836 (both sponsored by SAG-AFTRA) establish consent requirements for digital replicas of living and deceased performers.
+Tennessee's ELVIS Act modernizes right-of-publicity protections to address AI-generated uses of personal identity.
+At the federal level, the TAKE IT DOWN Act was signed into law in May 2025, with platform notice-and-removal obligations entering force on 19 May 2026 and enforced by the Federal Trade Commission.
+Additional federal measures, including the NO FAKES Act, the COPIED Act, and the TRAIN Act, remain pending in Congress.
+
+Internationally, the *UK's* Data (Use and Access) Act 2025, Section 138, in force from 6 February 2026, criminalizes the creation of intimate images of an adult without consent, expressly covering AI-generated deepfakes.
+The UK Information Commissioner's Office has further confirmed that AI-generated images of real people are subject to data protection law, extending regulatory reach beyond the criminal statute.
+*Denmark* has proposed amendments to its copyright law to recognize a person's right to their own body, facial features, and voice, providing a takedown right against non-consensual AI imitations.
+*France's* Penal Code Article 226-8-1 criminalizes the public distribution of algorithmically generated sexual content depicting a real person without consent.
+*India's* 2026 IT Rules treat AI-generated impersonation and non-consensual intimate imagery as priority categories, with two-hour takedown windows for non-consensual intimate imagery and three-hour windows for other unlawful synthetic content.
+
+Collectively, these statutes establish consent requirements governing identity use in digital contexts.
+
+This legislative landscape, spanning multiple regions and legal traditions, highlights a structural gap: while provenance and disclosure mechanisms are emerging, there is no standardized, machine-readable way for creators and rights holders to declare permitted and prohibited uses of their assets or identity.
+
+This specification defines only the declaration of consent and does not establish legal validity, enforcement, or evidentiary sufficiency.

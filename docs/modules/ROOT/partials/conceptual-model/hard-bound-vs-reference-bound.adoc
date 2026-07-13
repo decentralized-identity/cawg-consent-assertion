@@ -1,0 +1,34 @@
+[#consent_binding_signals]
+=== Hard-bound vs reference-bound consent signals
+
+This section is conceptual and does not define system architecture or implementation requirements.
+
+Consent categories defined in this specification MAY be implemented as either:
+
+* *Hard-bound signals:* embedded in the asset and representing durable declarations at time of publication
+* *Reference-bound signals:* referenced via registry and representing current or evolving permission state
+
+*Illustrative examples (non-normative):*
+
+Hard-bound:
+
+* AI training posture
+* baseline licensing posture
+* derivative works posture
+* ethical prohibitions
+* precedence declaration
+
+Reference-bound:
+
+* revocation status
+* validity windows
+* active licensing state
+* compensation details
+
+These examples are illustrative only and do not prescribe implementation behavior or classification requirements.
+
+Both layers are independently meaningful.
+Hard-bound signals provide baseline interpretation when registry access is unavailable.
+Reference-bound signals provide current authoritative state.
+
+Whether a given category is represented on-asset or via external reference is implementation-dependent.

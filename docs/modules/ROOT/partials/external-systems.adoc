@@ -1,0 +1,29 @@
+[#consent_external_systems]
+== Relationship to external systems
+
+Consent assertions MAY reference external systems (e.g., trust registries or policy stores) that maintain current permission state, granular terms, and related information.
+
+This allows:
+
+* consent to evolve independently of the asset
+* up-to-date permission information to be referenced when needed
+* industry-specific consent modules to provide templates appropriate to the asset type
+* revocation and update status to be referenced as needed
+* compensation-related information to be declared and referenced
+
+The structure and behavior of such external systems are out of scope for this specification.
+This specification defines only the URI reference mechanism by which the on-asset consent assertion points to an external system.
+
+This specification does not define synchronization, validation, or resolution behavior between the asset and any external system.
+Nor does it define mechanisms for establishing the authenticity, legal sufficiency, or evidentiary weight of any consent declaration or referenced record.
+
+Implementations MAY rely on external trust or credential frameworks when evaluating referenced systems.
+
+NOTE: This specification defines consent declarations as gathered assertions within C2PA Manifests.
+Adjacent standards efforts, including JPEG Trust (ISO/IEC 21617), address how provenance and rights-related signals are evaluated against context-specific trust policies.
+Consent assertions as defined herein may serve as inputs to such evaluation frameworks.
+This specification does not define evaluation logic and is intended to be compatible with, not duplicative of, trust evaluation standards.
+
+https://www.iso.org/standard/80392.html[ISO/IEC TS 27560:2023] (Consent Record Information Structure) defines an interoperable, extensible framework for recording consent to PII processing, including consent records, consent receipts, and lifecycle management.
+While that standard addresses consent in the context of personal data processing, rather than creative asset permissions, its design explicitly accommodates domain-specific schema _extensions_ (see ISO/IEC TS 27560:2023, 6.3.1 and Annex B).
+Registry implementations that support consent assertions as defined in this specification MAY adopt structural patterns from ISO/IEC TS 27560, including versioned consent records, lifecycle state management, and party identification, expressed as a domain profile appropriate and useful to creative asset and performer identity consent.

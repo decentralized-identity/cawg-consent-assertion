@@ -1,0 +1,12 @@
+[#consent_registry_pointer]
+=== Registry pointer
+
+*What it expresses:* The top-level `registry_uri` field in the consent assertion map provides a persistent URI pointing to an external system that may contain additional consent-related information.
+
+This field provides a reference mechanism by which implementations may associate the on-asset declaration with externally maintained information.
+
+Different systems may serve different communities – for example, voice actor systems, music systems, or photography systems – each using the same CAWG consent assertion categories on the asset, while maintaining their own data structures, policies, and interfaces.
+
+The presence of a `registry_uri` does not imply that any referenced system is authoritative, complete, or trusted.
+
+The structure, behavior, and trust characteristics of such external systems are out of scope for this specification.

@@ -1,0 +1,3 @@
+The link:https://spec.c2pa.org/specifications/specifications/2.4/specs/C2PA_Specification.html[*C2PA technical specification*] allows actors in a workflow to make cryptographically signed assertions about the produced C2PA asset.
+
+This specification describes a C2PA assertion referred to here as the *consent assertion* that enables a creator or rights holder to express machine-readable declarations of permitted and prohibited use for a digital asset.

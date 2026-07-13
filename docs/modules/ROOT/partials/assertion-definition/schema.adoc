@@ -1,0 +1,16 @@
+=== Schema
+
+NOTE: The CDDL (schema) definition for this assertion type will be developed during the PR process.
+The schema will follow CBOR serialization per C2PA conventions.
+The structure below represents the intended pattern.
+
+The consent assertion is expected to follow a structure analogous to the training and data mining assertion, with an `entries` map containing one or more consent category entries:
+
+[source,cddl]
+----
+include::schema.cddl[]
+----
+
+The `registry_uri` field at the top level, if present, SHALL be a persistent URI pointing to an external system where the full consent declaration resides (see xref:consent_external_systems[xrefstyle=full]).
+
+Individual category entries MAY include a `registry_ref` field providing a category-specific reference within the external system identified by `registry_uri`.

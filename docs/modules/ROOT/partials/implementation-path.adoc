@@ -1,0 +1,9 @@
+== Proposed implementation path
+
+. *Issue creation.* Two CAWG issues.
+First: expand the training-and-data-mining assertion into a consent assertion family (asset consent categories).
+Second: add trust registry URI field to the CAWG specification.
+. *Working group review.* Present categories to CAWG for feedback, refinement, and consensus on scope.
+. *PR development.* Draft pull request to update the CAWG specification with the agreed assertion categories and field definitions, including CDDL schema.
+. *Registry guidance.* Develop guidance documentation for how trust registries should implement consent modules that connect to CAWG assertions.
+. *Pilot implementation.* Demonstrate end-to-end flow with a real-world registry (e.g., voice actor community) to validate the architecture.

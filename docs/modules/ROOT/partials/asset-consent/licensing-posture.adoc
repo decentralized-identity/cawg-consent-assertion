@@ -1,0 +1,10 @@
+=== Licensing posture
+
+*Category identifier:* `cawg.licensing_posture`
+
+*What it expresses:* The creator's general licensing model.
+Signals to platforms the creator's declared licensing posture without encoding full terms.
+
+*Values:* `ALL_RIGHTS_RESERVED` | `TIERED` | `RIGHTS_MANAGED` | `CREATIVE_COMMONS` | `CONTACT_FOR_TERMS`
+
+Where the value is `CREATIVE_COMMONS`, the specific license variant (e.g., CC-BY, CC-BY-SA, CC-BY-NC) MAY be specified via `constraint_info` or at the registry.

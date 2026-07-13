@@ -1,0 +1,11 @@
+=== Provenance and consent
+
+Provenance assertions provide a time-ordered, append-only record of actions taken on an asset.
+They answer: _“What happened to this asset?”_
+
+Consent assertions provide a declarative expression of permitted and restricted future use.
+They answer: _“What is permitted to be done with this asset?”_
+
+These two concepts are related but distinct.
+A valid provenance record does not imply that a use is permitted under consent.
+A valid consent declaration does not constitute a provenance record of any action having been taken.

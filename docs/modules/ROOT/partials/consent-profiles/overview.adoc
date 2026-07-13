@@ -1,0 +1,18 @@
+[#consent_profiles_overview]
+=== Overview
+
+_This section is non-normative._
+
+The consent categories defined in xref:consent_asset_categories[xrefstyle=full] address asset-level consent that applies to any digital content.
+Some communities require additional consent dimensions specific to their industry or use case.
+
+Industry-specific consent profiles extend the base consent assertion by adding categories relevant to a particular community or use case.
+These additional categories:
+
+* use entity-specific labels (e.g., `com.example.performer.replica_creation`)
+* follow the same structural pattern as the base categories
+* are included in the same `entries` map within the consent assertion
+* are defined and maintained by the communities that use them, not by this specification
+
+This specification does not define or standardize any industry-specific profiles.
+The following section provides an illustrative example to demonstrate how the framework accommodates identity consent for performers.

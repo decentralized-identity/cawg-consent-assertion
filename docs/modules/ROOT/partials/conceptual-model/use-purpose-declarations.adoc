@@ -1,0 +1,25 @@
+=== Use-purpose declarations and bidirectional consent evidence
+
+Consent declarations as defined in this specification express the original creator's or rights holder's permissions and restrictions.
+In practice, digital assets may be incorporated into derivative works by downstream creators who claim legitimate use purposes such as parody, satire, news reporting, commentary, or education.
+
+The distinction between derivative works that are referential or transformative in nature (e.g., commentary, criticism, parody) and those that are competitive substitutes for the original is significant in many legal frameworks governing fair use.
+This specification does not define or adjudicate that distinction.
+However, the availability of structured use-purpose declarations from downstream creators, alongside the original creator's consent declarations, provides evidence that may be relevant to such determinations.
+
+This specification anticipates that downstream creators MAY declare the intended purpose of their use through their own assertions, whether these are consent assertions, provenance assertions, or other gathered assertions attached to the derivative work.
+
+Where both the original creator's consent declarations and a downstream creator's use-purpose declarations are accessible – whether embedded in their respective manifests or referenced via registry – they collectively provide structured, machine-readable evidence that may be relevant to determining whether a particular use was authorized, claimed as a legitimate purpose, or potentially fraudulent.
+
+This specification does not define:
+
+* how use-purpose declarations are structured (this may be addressed in a future specification or by domain-specific profiles)
+* how original consent and downstream use-purpose declarations interact
+* how disputes between such declarations are resolved
+
+The availability of structured declarations from both parties provides a more complete evidentiary record than unilateral declaration alone.
+
+NOTE: Consent declarations apply to the asset on which they are made.
+A consent assertion on a derivative work SHALL NOT be interpreted as modifying, overriding, or superseding consent declarations attached to upstream assets in the provenance chain.
+Upstream consent declarations remain operative on their original assets and are accessible through the C2PA ingredient manifest mechanism.
+The evaluation of how multiple consent declarations across a provenance chain affect the permitted use of a downstream work is out of scope for this specification.

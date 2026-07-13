@@ -1,0 +1,10 @@
+[#consent_use_with_identity]
+== Use with identity assertion
+
+A consent assertion is included in `gathered_assertions` in the C2PA Claim schema, and the assertion is not attributed to the signer of the C2PA Manifest.
+
+It is required to include a consent assertion as a _referenced assertion_ within a https://cawg.io/identity/[_CAWG identity assertion_].
+
+This reference SHALL represent a declaration by the _named actor_ of that identity assertion to the accuracy and intent of the declared consent terms.
+
+This pattern is consistent with the approach described in Section 5, “Use with identity assertion,” of the https://cawg.io/metadata/[_CAWG metadata assertion_] specification.

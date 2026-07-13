@@ -1,0 +1,18 @@
+[#consent_training_mining]
+== Relationship to training and data mining assertion
+
+The https://cawg.io/training-and-data-mining/1.1/[_CAWG training and data mining assertion_] (`cawg.training-mining`) addresses a subset of the consent domain covered by this specification – specifically, whether an asset may be used for data mining, AI inference, AI training, and generative AI training.
+
+This specification proposes to extend that work into a broader family of consent assertions.
+Two approaches are under consideration:
+
+*Option A: Subsumption.*
+The consent assertion incorporates the AI training and data mining categories within its `cawg.ai_training_and_mining` category entry, and the standalone training and data mining assertion is deprecated in favor of the consent assertion's expanded scope.
+
+*Option B: Coexistence.*
+The training and data mining assertion continues to exist as a standalone assertion for backward compatibility, while the consent assertion provides a broader framework.
+Where both are present in the same manifest, the consent assertion's values SHOULD take precedence.
+
+Subsumption is generally preferred to reduce ambiguity and avoid conflicting declarations.
+
+The preferred approach will be determined during CAWG working group review.

@@ -1,0 +1,19 @@
+[#consent_conceptual_model]
+== Conceptual model
+
+This section defines the conceptual relationship between consent declarations, provenance, identity, disclosure, and external use.
+Terms used in this section are defined in xref:consent_terms[xrefstyle=full].
+
+include::provenance-and-consent.adoc[]
+
+include::independence.adoc[]
+
+include::three-layer-architecture.adoc[]
+
+include::hard-bound-vs-reference-bound.adoc[]
+
+include::disclosure-boundary.adoc[]
+
+include::enforcement-boundary.adoc[]
+
+include::use-purpose-declarations.adoc[]

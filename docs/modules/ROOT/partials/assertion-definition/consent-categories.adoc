@@ -1,0 +1,20 @@
+[#consent_categories]
+=== Consent categories
+
+A consent assertion SHALL contain one or more *consent categories*, each expressing a distinct dimension of permission or restriction.
+These categories define what may be declared, not how such declarations are interpreted or enforced.
+
+Each consent category SHALL be represented as a structured map entry within the assertion, containing at minimum:
+
+* A *category identifier* (a label conforming to the conventions described in the https://cawg.io/identity/[_CAWG identity assertion_] specification, Section 5.3, “Labels”)
+* A *value* expressing the permission state for that category
+
+Category identifiers beginning with `cawg.` are reserved for categories defined in this specification and future versions thereof, and SHALL NOT be assigned by any other entity.
+
+Domain-specific categories (e.g., for performers, musicians, or journalists) MAY use entity-specific labels following the naming convention described in the identity assertion specification (e.g., `com.example.performer.replica_creation`).
+
+The absence of a consent category from a consent assertion SHOULD NOT be interpreted as either permission or prohibition for that category.
+Incomplete declarations reflect the scope of what the creator chose to declare, not the full scope of what is permitted.
+Consuming systems SHOULD treat undeclared categories as indeterminate rather than as implicitly permitted or implicitly prohibited.
+
+NOTE: Implementations are encouraged to adopt a conservative interpretation of undeclared categories, particularly in contexts involving identity, harm, or legal exposure.

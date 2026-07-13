@@ -1,0 +1,14 @@
+=== Precedence declaration
+
+*Category identifier:* `cawg.precedence`
+
+*What it expresses:* Whether the consent terms declared in this assertion should be treated as the primary expression of permitted and prohibited use for the asset.
+
+*Values:* `ASSET_TERMS_GOVERN` | `PLATFORM_DEFAULT`
+
+Where the value is `ASSET_TERMS_GOVERN`, the declarant expresses that the consent terms associated with this asset represent their authoritative statement of permissions, and that consuming systems should interpret these terms as the primary expression of intent rather than relying solely on platform-level defaults.
+This field expresses declared intent regarding interpretive priority.
+It does not establish legal precedence over any contract, agreement, or platform policy.
+Enforcement of such priority is implementation-specific.
+
+This declaration does not establish a conflict resolution mechanism between systems.

@@ -1,0 +1,23 @@
+=== Three-layer architecture
+
+Consent declarations MAY be represented across three conceptual layers:
+
+*1. Hard-bound (on-asset)*
+
+Category-level declarations embedded in the C2PA Manifest.
+
+These represent declared consent signals associated with the asset at the time of publication and are available without network access.
+
+*2. Reference-bound (registry)*
+
+Consent-related information that MAY be referenced from a hard-bound manifest via a registry URI, including updated or additional declarations, including updates, revocation, validity status, and extended terms.
+
+*3. Disclosure layer (contextual)*
+
+Implementations MAY selectively disclose identity, metadata, or consent-related information based on requestor, purpose, or trust relationship.
+
+The disclosure layer is influenced by consent declarations but is not itself a static component of the consent assertion.
+
+Implementations MAY choose to embed a full permission manifest directly within the asset in addition to, or instead of, a registry pointer, where payload size and workflow constraints permit.
+
+The disclosure layer does not constitute a component of the consent assertion and is not encoded as a fixed structure within the asset.

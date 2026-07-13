@@ -1,0 +1,20 @@
+[#consent_enforcement_boundary]
+=== Enforcement boundary
+
+Consent declarations govern external use of a digital asset: distribution, publication, platform ingestion, playback, licensing, and any transfer to an external party or system.
+
+Internal workflows of the asset's creator, rights holder, or parties acting within the scope of the rights holder's authority are not required to be subject to consent evaluation under this specification, provided that such workflows remain within the consent scope declared by all governing parties.
+A creator working on their own asset, a cinematographer shooting under contract, an editor working within a production, or a delegated agent acting within their delegated scope is not required to bind consent assertions during such use.
+This specification SHALL NOT preclude voluntary internal consent evaluation as part of an organization's compliance practices.
+
+Creator identity remains part of the asset's provenance regardless of contractual rights transfer.
+The creator field and the rights holder field describe separate facts about the asset and persist independently through the provenance chain, even when both resolve to the same party.
+
+Subject consent governs use of a subject's identity according to the scope declared at the time of consent.
+Transfer of an asset by the rights holder to a third party SHALL NOT expand the scope of subject consent.
+Expanded use beyond the originally declared scope MAY require new subject consent, typically negotiated through additional contractual terms and compensation.
+
+Once an asset is transferred to any external party or system, the consent declaration governs that party's use of the asset, including internal workflows, regardless of whether such use is characterized as “private.”
+
+When an asset is presented for external use, the consent declaration is available for evaluation against the proposed use.
+The mechanism by which evaluation occurs is outside the scope of this specification.

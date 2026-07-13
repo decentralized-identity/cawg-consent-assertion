@@ -379,3 +379,15 @@ pre code {
   color: inherit;
   word-wrap: normal;
 }
+
+/* Dark-green highlight, preserving the background color from the source document. */
+.delegated-consent {
+  background-color: #38761d;
+  color: #fff;
+  padding: 0.05em 0.2em;
+  border-radius: 2px;
+}
+
+.delegated-consent a {
+  color: #fff;
+}

@@ -1,0 +1,9 @@
+=== Scope
+
+Given the breadth of the consent domains described above, it is important to define the boundaries of this specification clearly.
+
+This specification defines how consent is declared, how consent is structured, and how consent may reference external systems.
+
+This specification does NOT define how consent is evaluated, how consent is enforced, or how conflicts between consent declarations are resolved.
+These behaviors are intentionally left to implementers and are outside the scope of CAWG standardization.
+No inference should be made from this specification regarding how such behaviors are implemented.

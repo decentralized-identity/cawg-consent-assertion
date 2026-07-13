@@ -3,6 +3,13 @@
 
 _This section is non-normative._
 
-*12 July 2026*
+*March 2026*
 
-* Initial placeholder document
+* Initial working draft (0.1) of this specification.
+* Proposed eight asset consent categories.
+* Defined consent domain taxonomy (asset, identity, access/purpose).
+* Established three-layer architecture (hard-bound declarations, soft-bound registry state, and contextual disclosure compatibility).
+* Described relationship to existing https://cawg.io/training-and-data-mining/1.1/[_training and data mining assertion_].
+* Included non-normative performer consent profile as domain-specific extension example.
+* Included non-normative legislative context.
+* Introduced conceptual framework for bidirectional consent evidence (use-purpose declarations by downstream creators).

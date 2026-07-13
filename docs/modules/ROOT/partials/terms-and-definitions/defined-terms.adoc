@@ -1,0 +1,103 @@
+[#consent_defined_terms]
+=== Terms defined in this specification
+
+For the purposes of interpreting consent declarations in this specification, the definitions in this section govern unless otherwise stated.
+
+==== Consent assertion
+
+The specific C2PA gathered assertion (labeled `cawg.consent`) that carries one or more consent declarations within a C2PA Manifest.
+A consent assertion is the container; the consent declarations within it are the substantive content.
+See xref:consent_assertion_overview[xrefstyle=full].
+
+==== Consent category
+
+A single dimension of permission or restriction within a consent assertion.
+Each consent category addresses a distinct aspect of what may or may not be done with an asset or identity.
+Examples include AI training posture, licensing posture, and derivative works policy.
+See xref:consent_categories[xrefstyle=full].
+
+==== Consent declaration
+
+The substantive expression of permissions and restrictions made by a creator or rights holder regarding a digital asset or identity.
+A consent declaration is carried within a consent assertion but is conceptually distinct from it: the assertion is the C2PA data structure; the declaration is the expressed intent.
+A consent declaration represents a statement of intent and does not, by itself, constitute verified authorization, enforceable rights, or proof of permission.
+
+==== Consent domain
+
+One of three conceptual areas in which consent may apply to digital media: asset consent (permissions attached to the digital asset itself), identity consent (permissions attached to a human being's identity as embodied in a digital asset), and access and purpose consent (permissions attached to disclosure, access, or use in a governed context).
+This specification primarily addresses asset consent.
+See xref:consent_domains[xrefstyle=full].
+
+NOTE: The cross-reference above points from this normative term definition to xref:consent_domains[xrefstyle=full], which is a non-normative section.
+Linking from normative text to non-normative text is problematic and should be resolved before this specification is finalized.
+
+==== Cooperative system
+
+A platform, application, or service that voluntarily evaluates consent declarations before permitting external use of a digital asset.
+Consent enforcement as described in this specification applies when an asset is presented to a cooperative system.
+This specification does not define what makes a system cooperative, nor does it impose any obligation on any system to evaluate consent declarations or act upon them.
+The term describes the class of systems for which consent declarations are relevant at the point of use.
+See xref:consent_enforcement_boundary[xrefstyle=full].
+
+NOTE: Eric's detailed comparison with the original Google Doc will need to resume from here.
+
+==== Digital asset
+
+Any content in electronic form, regardless of format, encoding, or distribution method, including but not limited to images, audio, video, text, and three-dimensional models.
+References to “digital” assets, replicas, and content in this specification do not create a separate category of content exempt from the consent declarations defined herein.
+
+==== Digital replica
+
+A computer-generated representation of identifiable characteristics of a specific, recognizable person – including but not limited to their likeness, voice, movement, mannerisms, or other biometric features – that is sufficiently realistic or detailed that it could reasonably be perceived as depicting that person, whether or not the depiction is accurate.
+A digital replica may be produced through any technical means, including but not limited to AI synthesis, motion capture, voice cloning, or compositing.
+
+NOTE: Legislative definitions of “digital replica” vary across jurisdictions.
+California AB 2602 and AB 1836 scope the term primarily to voice and likeness.
+The federal NO FAKES Act encompasses voice, image, and likeness.
+This specification adopts a broader definition encompassing voice, likeness, movement, mannerisms, and biometric characteristics, in order to accommodate existing and anticipated legislative frameworks and to support consent declarations across the full range of identity dimensions that may be embodied in digital media.
+This definition is intended to be compatible with, not duplicative of, any particular legislative definition.
+Implementations operating under specific legal frameworks should consult applicable statutory definitions.
+For an illustrative example of how digital replica consent may be expressed through domain-specific consent profiles, see xref:consent_identity_profile[xrefstyle=full].
+
+==== Hard-bound signal
+
+A consent declaration embedded directly within a C2PA Manifest, representing the declared permission state at the time of publication.
+Hard-bound signals are available without network access and provide baseline interpretation when a registry is unreachable.
+See xref:consent_binding_signals[xrefstyle=full].
+
+==== Performer
+
+A human individual whose identity – including any combination of their likeness, voice, movement, mannerisms, or performance – is embodied in or associated with a digital asset, and who may declare consent regarding the use of that identity.
+The term encompasses actors, voice performers, musicians, dancers, and any other individuals whose personal characteristics are captured in or referenced by a digital asset.
+
+==== Permission state
+
+The current set of permissions and restrictions applicable to a digital asset or identity as expressed through consent declarations.
+Permission state may be represented on-asset (hard-bound), referenced via an external system (reference-bound), or both.
+Permission state is mutable and may evolve independently of the asset's provenance history.
+
+==== Reference-bound signal
+
+Consent-related information referenced via a registry URI, representing current or evolving permission state external to the asset.
+Reference-bound signals may include updates, revocation, validity status, and extended terms not embedded in the asset.
+See xref:consent_binding_signals[xrefstyle=full].
+
+==== Rights holder
+
+A person or entity that makes a consent declaration regarding a digital asset or identity.
+The use of this term in this specification denotes the party making the declaration and does not constitute a determination of legal ownership, copyright status, or the validity of any underlying rights claim.
+This specification provides a structure for rights holders to declare permissions; it does not adjudicate who holds rights, nor does it define the legal relationship between a rights holder and the asset or identity to which a consent declaration refers.
+Determination of rights ownership is outside the scope of this specification and may be addressed by applicable law, contractual agreements, or adjacent standards such as JPEG Trust (ISO/IEC 21617).
+
+NOTE: Multiple rights holders may make consent declarations regarding the same asset.
+For example, a video production may involve consent declarations from a production company (asset rights), individual performers (identity rights), and a music rights holder (composition and recording rights).
+Each rights holder's declaration is independently expressed and independently attributed via the identity assertion pattern described in xref:consent_use_with_identity[xrefstyle=full].
+
+==== Trust registry
+
+An external system referenced by a registry URI within a consent assertion, which may maintain current permission state, granular consent terms, revocation status, validity information, and other consent-related data.
+Different trust registries may serve different communities (e.g., voice performers, musicians, photographers), each using the same CAWG consent assertion categories on the asset while maintaining their own data structures, policies, and interfaces.
+This specification defines the URI reference mechanism by which a consent assertion points to a trust registry.
+The structure, behavior, trust characteristics, and legal standing of trust registries are out of scope for this specification.
+The presence of a registry URI does not imply that the referenced system is authoritative, complete, or trusted.
+See xref:consent_registry_pointer[xrefstyle=full] and xref:consent_external_systems[xrefstyle=full].

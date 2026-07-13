@@ -1,0 +1,21 @@
+=== Motivation
+
+CAWG currently supports a single consent-related assertion: the https://cawg.io/training-and-data-mining/1.1/[_training and data mining assertion_], which enables a human creator or rights holderfootnote:[See NOTE at the bottom of xref:consent_external_systems[xrefstyle=full] re: JPEG Trust.] to express whether an asset may be used for data mining or AI/ML training workflows.
+This assertion offers a three-value choice (`allowed` / `notAllowed` / `constrained`) across a defined set of training and mining use cases.
+
+This existing assertion does not address the broader question that every creator and performer needs to answer when publishing digital content: _What may be done with this asset, by whom, under what conditions, and what is explicitly prohibited?_
+
+Without a comprehensive consent framework in CAWG, creators who attach their identity to digital assets via https://cawg.io/identity/[_identity assertions_] have no standardized way to express their permissions alongside their provenance.
+A creator can prove they made something, but they cannot express what they allow to be done with it.
+
+The result is that consent is expressed through inconsistent platform Terms of Service, unstructured contract language, and verbal agreements – none of which are machine-readable.
+When disputes arise, there is no structured record of creator intent.
+
+Emerging distribution patterns further illustrate this gap.
+In practice, multiple consent domains are often implicated simultaneously.
+For example, serialized video content may be scraped, ingested into AI systems, and used to generate near-identical reproductions with superficial modifications – altered scenery, appearance, or presentation – while retaining the structure, performances, and creative contributions of the original work.
+In such cases, the original asset content, performer identity, and human-authored creative contributions are reused without a structured, machine-readable expression of permitted or prohibited use.
+This can result in uncertainty for downstream platforms and users regarding what uses are authorized, and highlights the need for a standardized consent framework that distinguishes and coordinates these domains.
+
+NOTE: Terms used in this specification are defined in xref:consent_terms[xrefstyle=full].
+Where this specification uses terminology from the C2PA technical specification or CAWG identity assertion, the definitions in those specifications apply unless stated otherwise in xref:consent_terms[xrefstyle=full].

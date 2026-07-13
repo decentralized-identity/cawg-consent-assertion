@@ -1,0 +1,14 @@
+=== Disclosure boundary and consent-linked disclosure
+
+Consent declarations define what is permitted to be done with an asset or identity.
+In some implementations, consent declarations MAY also influence what information is disclosed to a given party.
+
+Disclosure behavior is external to the consent assertion and is evaluated at time of use.
+Consent declarations MAY serve as inputs to such evaluation but do not define it.
+
+NOTE: Selective disclosure mechanisms may be implemented by external identity or privacy-preserving frameworks.
+This specification does not define such mechanisms and does not require any particular technology.
+Consent declarations defined herein are intended to be compatible with such systems where implementations choose to use them.
+
+This specification does not define how disclosure decisions are evaluated, how disclosure policies are structured, or how selective disclosure is implemented or enforced.
+The presence of a consent assertion does not imply that all associated identity or metadata must be disclosed in all contexts.

@@ -1,0 +1,56 @@
+[#consent_identity_profile]
+=== Identity consent (performer profile)
+
+_This section is non-normative and illustrative._
+
+Standardization of identity consent is emerging as a critical area for future work due to emerging legal requirements around digital replicas and biometric identity use.
+
+When a digital asset embodies a human being's identity – their voice, image, name, likeness, movement, and/or performance – consent applies to the person as well as to the asset.
+Asset consent and identity consent address distinct dimensions and coexist within the same manifest; neither supersedes the other.
+This is the identity consent domain described in xref:consent_domains[xrefstyle=full].
+
+NOTE: Standardized identity consent profiles are anticipated as a natural next-stage extension of this framework, and may be developed by industry groups, standards bodies, or registries.
+This specification does not define such profiles.
+
+An example of a domain-specific consent profile (e.g., performer identity consent) may include categories such as the following.
+The following categories are representative examples of dimensions that may be relevant in identity consent, and are not intended to define a complete or canonical model.
+
+The following illustrative categories represent an example of how a subject consent assertion, as described in xref:consent_assertion_overview[xrefstyle=full], might be structured for performer identity consent.
+
+[cols="1,2"]
+|===
+| Category | What it expresses
+
+| Digital replica creation and use
+| Whether a digital replica may be created. Scope: voice cloning, likeness capture, motion/performance modeling.
+
+| Identity scope
+| Which aspects of identity are included: voice, likeness, body, movement, performance style.
+
+| AI training and model use (identity)
+| Whether identity specifically (as distinct from the asset) may be used in AI systems for training, generation, or enhancement.
+
+| Character and representation rights
+| Whether identity may portray characters: original roles, composite characters, synthetic personas. Attribution requirements.
+
+| Contextual and ethical restrictions (identity)
+| Where the identity may NOT appear, e.g. hate speech, political use, surveillance, military, adult content.
+
+| Standalone asset creation
+| Whether identity may be used outside the original production context: marketing assets, virtual influencers, digital merchandise, stock media.
+
+| Intimate and sensitive use
+| Whether identity may be used in sensitive scenarios: nudity, sexual content, biometric sensitivity.
+
+| Usage terms, duration, and revocation
+| Time limits, geographic restrictions, revocation rights, conditional continuation terms.
+
+| Identity consent record pointer
+| Persistent URI to the full identity consent record, with versioned consent state and identity verification context.
+|===
+
+These categories are illustrative only and do not constitute a standardized schema within this specification.
+
+These categories may be expressed using entity-specific labels within the same consent assertion `entries` map, with detailed terms optionally referenced via the registry URI.
+
+NOTE: External frameworks and industry-specific systems may define structured approaches to identity consent using categories such as these.

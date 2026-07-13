@@ -1,0 +1,21 @@
+[#consent_asset_categories]
+== Consent categories: asset consent
+
+_This section defines the consent categories applicable to any digital asset.
+These represent the minimum viable consent framework for CAWG gathered assertions._
+
+include::ai-training-and-mining.adoc[]
+
+include::licensing-posture.adoc[]
+
+include::derivative-works.adoc[]
+
+include::ethical-restrictions.adoc[]
+
+include::compensation-model.adoc[]
+
+include::revocation-status.adoc[]
+
+include::precedence.adoc[]
+
+include::registry-pointer.adoc[]

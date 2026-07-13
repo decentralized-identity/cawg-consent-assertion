@@ -22,4 +22,30 @@ include::partial$common/foreword.adoc[]
 
 include::partial$common/toc.adoc[]
 
+include::partial$introduction/index.adoc[]
+
+include::partial$normative-references.adoc[]
+
+include::partial$terms-and-definitions/index.adoc[]
+
+include::partial$conceptual-model/index.adoc[]
+
+include::partial$assertion-definition/index.adoc[]
+
+include::partial$asset-consent/index.adoc[]
+
+include::partial$consent-profiles/index.adoc[]
+
+include::partial$use-with-identity-assertion.adoc[]
+
+include::partial$training-mining-relationship.adoc[]
+
+include::partial$external-systems.adoc[]
+
+include::partial$scope-of-standardization.adoc[]
+
+include::partial$implementation-path.adoc[]
+
+include::partial$terminology-mapping.adoc[]
+
 include::partial$version-history.adoc[]

@@ -5,8 +5,6 @@
 :sectnums:
 :sectnumlevels: 5
 
-include::partial$abstract.adoc[]
-
 *Version 1.0 Draft 12 July 2026* · xref:_version_history[]
 
 [IMPORTANT]

@@ -5,6 +5,8 @@
 :sectnums:
 :sectnumlevels: 5
 
+include::partial$abstract.adoc[]
+
 *Version 1.0 Draft 12 July 2026* · xref:_version_history[]
 
 [IMPORTANT]
@@ -19,5 +21,21 @@ include::partial$common/contributing.adoc[]
 include::partial$common/foreword.adoc[]
 
 include::partial$common/toc.adoc[]
+
+include::partial$scope.adoc[]
+
+include::partial$terms-and-definitions/index.adoc[]
+
+include::partial$conceptual-model.adoc[]
+
+include::partial$consent-assertion/index.adoc[]
+
+include::partial$consent-authority.adoc[]
+
+include::partial$out-of-scope.adoc[]
+
+include::partial$relationship.adoc[]
+
+include::partial$acknowledgments.adoc[]
 
 include::partial$version-history.adoc[]

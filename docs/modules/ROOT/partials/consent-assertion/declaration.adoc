@@ -1,0 +1,7 @@
+=== Declaration
+
+A participant's identity consent SHALL be declarable only by that participant or by that participant's authorized representative.
+
+Asset consent SHALL be declared by a rights holder for the work.
+A work MAY have more than one rights holder, and each MAY declare consent for the rights that holder controls.
+A rights holder MAY be a natural person or an organization, identified as a named actor.

@@ -1,0 +1,5 @@
+== Acknowledgments
+
+_This section is non-normative._
+
+The author thanks the reviewers of the Creator Assertions Working Group, whose comments substantially shaped the reference architecture of this specification.

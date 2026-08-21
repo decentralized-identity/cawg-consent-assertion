@@ -1,0 +1,28 @@
+=== Terms defined in this specification
+
+For the purposes of interpreting consent declarations in this specification, the definitions in this section govern unless otherwise stated.
+
+The following terms are local to this specification:
+
+* *Participant.* A natural person.
+* *Authorized representative.* A party authorized to act on a participant's behalf.
+* *Consent assertion.* The C2PA assertion defined here, carrying one or more consent references.
+* *Consent reference.* A pointer, carried within the CAWG-signed assertion, to an authoritative source of consent or permissions for the asset.
+* *Consent authority.* A service that holds and resolves the current consent terms a reference points to.
+* *Asset consent.* Terms governing use of the work, declared by a rights holder.
+* *Identity consent.* Terms governing use of a person's name, image, likeness, voice, movement, mannerisms, or persona, declared by the subject of that identity.
+* *Asset creator.* A party that captures, renders, or encodes the file.
+An asset creator may be a person, an organization, or a system operated by a person or organization.
+* *Rights holder.* A person or entity that declares terms regarding a digital asset or an identity embodied in it.
+The term denotes the declaring party and does not constitute a determination of legal ownership, copyright status, or the validity of any underlying claim.
+* *Subject.* A human being whose identity is embodied in or associated with a digital asset.
+A subject may declare identity consent regarding that use.
+* *Performer.* A subject whose identity is embodied in the asset through their performance, including any combination of likeness, voice, movement, mannerisms, or persona.
+Every performer is a subject; a subject need not be a performer.
+
+The terms _participant_ and _authorized representative_ are defined locally because the declaration rule in xref:consent_assertion_def[xrefstyle=full] depends on them.
+The terms _asset creator_, _rights holder_, _performer_, and _subject_ are defined locally pending adoption of common definitions in the CAWG committee glossary.
+Upon adoption, the glossary definitions govern.
+
+The term _named actor_ is used as defined in the https://cawg.io/identity/[CAWG identity assertion specification], so that its definition remains consistent across all CAWG assertions.
+A named actor may be a natural person, an organization, or a non-human device.

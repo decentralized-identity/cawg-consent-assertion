@@ -1,0 +1,12 @@
+== Scope
+
+This specification defines a C2PA assertion, the _consent assertion_, that carries a signed, machine-readable reference from a digital asset to an authoritative source of consent and related permissions for that asset.
+The reference resolves to the source that holds the current terms.
+
+This specification defines the reference and recommends what a consent authority should be able to express.
+It does not store consent, resolve conflicting claims, or enforce terms.
+Those functions belong to the referenced source and to the systems that consume the asset.
+
+The consent assertion is a discoverable, machine-readable reference.
+It is informational and is not itself a license or a warranty.
+Any legal effect arises from the referenced source, for example a contract or an authoritative consent record, and not from this assertion.

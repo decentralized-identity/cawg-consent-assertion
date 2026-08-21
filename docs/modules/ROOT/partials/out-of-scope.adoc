@@ -1,0 +1,16 @@
+[#consent_out_of_scope]
+== Out of scope
+
+This specification does not define:
+
+* how a referenced source stores consent;
+* how a referenced source resolves competing or conflicting claims;
+* how any party enforces terms;
+* how consent is combined with other assertions or signals to reach a use decision;
+* how the identity of a signer or participant is credentialed or verified;
+* how a withdrawal or change of consent is propagated to consumers; or
+* how compensation terms are executed or settled.
+
+Conflict resolution is delegated to the referenced source.
+The `supersedes_prior` assertion in xref:consent_assertion_def[xrefstyle=full] is the only conflict signal carried at the assertion level.
+This specification does not rely on relative timestamps across competing references to adjudicate conflicts.

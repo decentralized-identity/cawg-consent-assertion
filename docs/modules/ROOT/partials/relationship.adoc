@@ -1,0 +1,12 @@
+== Relationship to other specifications
+
+The consent reference is complementary to rights and licensing frameworks.
+
+Participant identity, including the identity of persons depicted in an asset, is carried through the https://cawg.io/identity/[CAWG identity assertion], to which an identity consent reference binds by way of the *bound_actor* field.
+
+*Downstream use under claimed lawful purposes.*
+An actor who uses an asset under a claimed lawful purpose, for example news reporting, commentary, parody, or education, has a place to record that claim: assertions of their own, in the manifest of the work they publish.
+Such an actor is ordinarily a rights holder of the new work and may declare asset consent for it in the usual way; the purpose claim is a distinct statement and is not a consent declaration.
+It is evidence of a claim, made by and attributable to the claimant.
+It does not modify any consent reference on an upstream asset, which remains accessible through the C2PA ingredient chain.
+This specification does not define use-purpose declarations; they are anticipated as future work.

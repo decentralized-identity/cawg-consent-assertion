@@ -1,0 +1,35 @@
+== Consent authority recommendation
+
+_This section is non-normative._
+
+CAWG does not build consent authorities.
+This section enumerates what a useful consent authority ought to be able to express on the consent side, so that any service may be validated against a minimum capability set.
+It does not describe how a service stores, resolves, or enforces those terms, nor how consent is combined with other assertions to reach a use decision.
+Those matters are out of scope (xref:consent_out_of_scope[xrefstyle=full]).
+
+A consent authority ought to be able to express:
+
+* the declaring party, and where applicable the party on whose behalf consent is declared, with the basis for that authorization, for example parental or guardianship authority, an estate or executorship, or a representation agreement;
+* asset consent terms, including artificial intelligence training and data mining, licensing posture, derivative works, named contextual prohibitions, and compensation;
+* the grant itself, where the authority functions as a license: the granted and prohibited uses, scope, consideration or compensation, term, and the parties to the grant;
+* identity consent terms for a subject, including any performer, covering likeness, voice, movement, mannerisms, and persona;
+* biometric-identifier restrictions for a participant: where biometric identifiers such as fingerprints, palmprints, or iris scans are collected in connection with an engagement, that those identifiers ought not be used for any purpose unrelated to that engagement.
+Unlike the grant-style terms above, this is expressed as a default restriction;
+* the current state and revocability of each term, where the current state is the most recent within that source;
+* the temporal validity of each term;
+* the continuity of its records, including how the authority provides for durability and succession so that references remain resolvable over time, for example through escrow of records, a designated successor authority, or persistent-identifier infrastructure;
+* the binding of the consent record to the asset and, for identity consent, to the participant's identity.
+
+A consent authority's record ought to express at least one term.
+A record expressing no terms conveys no consent and is treated as absent.
+
+A service that meets this set can be described as meeting the CAWG minimum recommendation for a consent authority.
+
+[NOTE]
+====
+Absence of a consent reference conveys no permission and is not, by itself, a prohibition.
+For asset consent, lawful-use doctrines, including fair use and first sale, can permit use of a work without consent.
+For identity consent, applicable law defines its own exceptions, which are generally narrower than copyright's; this specification takes no position on their scope.
+A claimed lawful purpose is a claim rather than a grant; where a downstream actor asserts one, the assertion is theirs to make and theirs to defend.
+A consumer ought not infer permission from silence, and where identity, harm, or legal exposure is involved and no authoritative consent can be resolved, a conservative consumer withholds use pending verification.
+====

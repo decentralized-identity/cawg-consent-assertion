@@ -1,0 +1,37 @@
+[#consent_binding]
+=== Binding
+
+Each consent reference SHOULD carry the binding appropriate to its domain:
+
+* For `identity` consent, the reference SHALL contain *bound_actor*: a reference to the `cawg.identity` assertion of the named actor, the participant, to whom the consent applies.
+* For `asset` consent, the reference binds to the asset carrying the manifest, and MAY contain *asset_creator*: a reference to the `cawg.identity` assertion of the asset-creator named actor.
+No person-shaped binding is required for asset consent.
+
+Each consent reference SHALL identify the asset to which it applies by reference to the asset's C2PA content binding (the hard binding, and a soft binding where present), in addition to its placement within the asset's manifest.
+This allows a consent reference encountered apart from its manifest to be matched to its asset.
+
+Consistent with existing CAWG practice, a consent reference is associated with a named actor by reference to that actor's `cawg.identity` assertion.
+
+[source,json]
+----
+{
+  "consent_references": [
+    {
+      "uri": "https://authority.example.org/identity/{record-id}",
+      "reference_type": "consent_authority",
+      "consent_domain": "identity",
+      "supersedes_prior": true,
+      "bound_actor": "cawg.identity:{participant-actor-id}"
+    },
+    {
+      "uri": "https://authority.example.org/asset/{record-id}",
+      "reference_type": "permission_record",
+      "consent_domain": "asset",
+      "supersedes_prior": false,
+      "asset_creator": "cawg.identity:{asset-creator-actor-id}"
+    }
+  ]
+}
+----
+
+If an asset is separated from its manifest, the standard C2PA mechanisms for linking a disconnected manifest, including watermark-based recovery, are used to relocate the manifest and therefore the consent reference.

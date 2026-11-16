@@ -11,7 +11,7 @@ The asset carries a signed pointer; the referenced source holds the live terms.
 Embedding the terms in the asset would freeze a value that is meant to change.
 
 Consent has two domains, treated separately throughout this specification.
-_Identity consent_ concerns a person's likeness, voice, movement, mannerisms, or persona, and is associated with a participant.
+_Identity consent_ concerns a person's name, image, likeness, voice, movement, mannerisms, or persona, and is associated with a participant.
 _Asset consent_ concerns use of a work, and is declared by its rights holder, who may be a natural person or an organization.
 The normative declaration and binding rules for each domain appear in xref:consent_assertion_def[xrefstyle=full].
 

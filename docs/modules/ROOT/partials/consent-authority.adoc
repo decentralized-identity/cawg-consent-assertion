@@ -12,10 +12,11 @@ A consent authority ought to be able to express:
 * the declaring party, and where applicable the party on whose behalf consent is declared, with the basis for that authorization, for example parental or guardianship authority, an estate or executorship, or a representation agreement;
 * asset consent terms, including artificial intelligence training and data mining, licensing posture, derivative works, named contextual prohibitions, and compensation;
 * the grant itself, where the authority functions as a license: the granted and prohibited uses, scope, consideration or compensation, term, and the parties to the grant;
-* identity consent terms for a subject, including any performer, covering likeness, voice, movement, mannerisms, and persona;
+* identity consent terms for a subject, including any performer, covering name, image, likeness, voice, movement, mannerisms, and persona;
 * biometric-identifier restrictions for a participant: where biometric identifiers such as fingerprints, palmprints, or iris scans are collected in connection with an engagement, that those identifiers ought not be used for any purpose unrelated to that engagement.
 Unlike the grant-style terms above, this is expressed as a default restriction;
 * the current state and revocability of each term, where the current state is the most recent within that source;
+* the history of each term: its prior states and the date and time each took effect;
 * the temporal validity of each term;
 * the continuity of its records, including how the authority provides for durability and succession so that references remain resolvable over time, for example through escrow of records, a designated successor authority, or persistent-identifier infrastructure;
 * the binding of the consent record to the asset and, for identity consent, to the participant's identity.

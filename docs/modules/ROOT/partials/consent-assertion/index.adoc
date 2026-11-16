@@ -1,12 +1,13 @@
 [#consent_assertion_def]
 == The consent assertion
 
-A consent assertion SHALL have the label `cawg.consent` and SHALL be expressed as a signer-attested assertion, carried as a CAWG metadata assertion, within a C2PA Manifest.
-The CAWG signer attests to the consent assertion; it is not a gathered assertion.
+A consent assertion SHALL have the label `cawg.consent` and SHALL be carried in the assertion store of a C2PA Manifest as a created assertion.
+It is not a gathered assertion.
+A consent assertion SHOULD be listed among the referenced assertions of a https://cawg.io/identity/[CAWG identity assertion], so that a named actor attests that the consent references exist and are correctly bound.
 
 Within a single manifest there SHALL be at most one `cawg.consent` assertion, written at the defined label.
-All consent references contributed by that signer SHALL be carried within that single assertion, in the `consent_references` array defined in xref:consent_reference_fields[xrefstyle=full], so that they appear at one defined location within the manifest.
-Where an asset's provenance includes more than one manifest, and therefore more than one CAWG signer, a consumer assembles the complete consent picture by reading the `cawg.consent` assertion present in each manifest in the C2PA manifest store.
+All consent references contributed by the signer SHALL be carried within that single assertion, in the `consent_references` array defined in xref:consent_reference_fields[xrefstyle=full], so that they appear at one defined location within the manifest.
+Where an asset's provenance includes more than one manifest, and possibly more than one signer, a consumer assembles the complete consent picture by reading the `cawg.consent` assertion present in each manifest in the C2PA manifest store.
 
 include::declaration.adoc[]
 

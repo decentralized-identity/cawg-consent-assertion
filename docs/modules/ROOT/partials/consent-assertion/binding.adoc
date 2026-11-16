@@ -1,14 +1,17 @@
 [#consent_binding]
 === Binding
 
-Each consent reference SHOULD carry the binding appropriate to its domain:
+The binding a consent reference carries depends on its domain:
 
-* For `identity` consent, the reference SHALL contain *bound_actor*: a reference to the `cawg.identity` assertion of the named actor, the participant, to whom the consent applies.
-* For `asset` consent, the reference binds to the asset carrying the manifest, and MAY contain *asset_creator*: a reference to the `cawg.identity` assertion of the asset-creator named actor.
+* For `identity` consent, the reference SHALL contain *bound_actor*: a hashed URI referencing the `cawg.identity` assertion of the named actor, the participant, to whom the consent applies.
+* For `asset` consent, the reference binds to the asset carrying the manifest, and MAY contain *asset_creator*: a hashed URI referencing the `cawg.identity` assertion of the asset-creator named actor.
 No person-shaped binding is required for asset consent.
 
-Each consent reference SHALL identify the asset to which it applies by reference to the asset's C2PA content binding (the hard binding, and a soft binding where present), in addition to its placement within the asset's manifest.
-This allows a consent reference encountered apart from its manifest to be matched to its asset.
+Where a manifest carries more than one `cawg.identity` assertion, the hashed URI identifies the specific assertion instance by its label.
+
+A consent reference is bound to its asset by its placement in the asset's C2PA Manifest, which the C2PA hard binding ties to the asset's content.
+A consent reference SHOULD also identify the asset by reference to that content binding, so that a reference encountered apart from its manifest can be matched to its asset.
+A field for this purpose is anticipated in a future version (xref:consent_future_work[xrefstyle=full]).
 
 Consistent with existing CAWG practice, a consent reference is associated with a named actor by reference to that actor's `cawg.identity` assertion.
 
@@ -21,14 +24,20 @@ Consistent with existing CAWG practice, a consent reference is associated with a
       "reference_type": "consent_authority",
       "consent_domain": "identity",
       "supersedes_prior": true,
-      "bound_actor": "cawg.identity:{participant-actor-id}"
+      "bound_actor": {
+        "url": "self#jumbf=c2pa.assertions/cawg.identity",
+        "hash": "{hash of the participant's identity assertion}"
+      }
     },
     {
       "uri": "https://authority.example.org/asset/{record-id}",
       "reference_type": "permission_record",
       "consent_domain": "asset",
       "supersedes_prior": false,
-      "asset_creator": "cawg.identity:{asset-creator-actor-id}"
+      "asset_creator": {
+        "url": "self#jumbf=c2pa.assertions/cawg.identity__1",
+        "hash": "{hash of the asset creator's identity assertion}"
+      }
     }
   ]
 }

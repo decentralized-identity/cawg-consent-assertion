@@ -1,0 +1,16 @@
+[#consent_future_work]
+== Future work
+
+_This section is non-normative._
+
+The following are anticipated in future versions of this specification or in companion documents:
+
+* a field identifying the asset by its C2PA content binding;
+* an indication, within an identity consent reference, of whether the participant or an authorized representative made the declaration;
+* a way to reference a subject who holds no identity assertion in the manifest;
+* a controlled vocabulary of identity consent terms;
+* guidance on how a consumer establishes trust in a consent authority;
+* behavior when a consent reference cannot be resolved;
+* a deterministic way for a later consent reference to identify an earlier reference it replaces, if implementation experience shows one is needed;
+* manifest-level supersession, as proposed in the C2PA Manifest Status work, as a way to mark a manifest carrying a consent reference as replaced; and
+* use-purpose declarations by downstream actors.

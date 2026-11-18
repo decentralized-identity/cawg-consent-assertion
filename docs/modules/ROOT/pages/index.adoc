@@ -36,6 +36,8 @@ include::partial$out-of-scope.adoc[]
 
 include::partial$relationship.adoc[]
 
+include::partial$future-work.adoc[]
+
 include::partial$acknowledgments.adoc[]
 
 include::partial$version-history.adoc[]

@@ -3,3 +3,5 @@
 The key words SHALL, SHALL NOT, SHOULD, SHOULD NOT, and MAY are interpreted as described in https://www.rfc-editor.org/rfc/rfc2119[RFC 2119].
 
 include::defined-terms.adoc[]
+
+include::normative-references.adoc[]

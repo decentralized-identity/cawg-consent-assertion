@@ -16,6 +16,6 @@ _Asset consent_ concerns use of a work, and is declared by its rights holder, wh
 The normative declaration and binding rules for each domain appear in xref:consent_assertion_def[xrefstyle=full].
 
 A note on roles.
-The signer attests that the consent reference exists and is correctly bound to the asset and, for identity consent, to the participant.
-The signer does not declare the consent itself.
+The claim signer, and any identity endorser, attests that the consent reference exists and is correctly bound to the asset and, for identity consent, to the participant.
+Neither declares the consent itself.
 The declaration lives at the authority and is made by the party entitled to make it: the participant or that participant's authorized representative for identity consent, a rights holder for asset consent.

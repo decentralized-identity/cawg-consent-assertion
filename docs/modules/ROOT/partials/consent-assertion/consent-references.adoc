@@ -19,18 +19,14 @@ Permitted values, defined locally pending adoption of common definitions:
 Permitted values: `identity`, `asset`.
 This value determines the binding requirement in xref:consent_binding[xrefstyle=full].
 
-Each consent reference MAY contain:
+The following rules apply to every consent reference:
 
-* *supersedes_prior* (default `false`): when `true`, the signer asserts that this reference is inclusive of and supersedes prior references of the same `consent_domain` that point to the same referenced source.
-The following rules govern this flag:
-+
---
-. The assertion is trusted to the extent the signer is trusted.
-It places the clearance burden on the signer as the last party to touch the asset before publication.
-. A `supersedes_prior` assertion operates within the binding of xref:consent_binding[xrefstyle=full] and does not extend a grant beyond the terms held by the referenced authority.
-. A signer MAY supersede only prior references to the same referenced source.
-References to other sources coexist and are not superseded by this flag.
-. For identity consent, the authority bound to the participant remains the source of the current terms regardless of a downstream signer's assertion.
-A later signer cannot widen a participant's grant by asserting `supersedes_prior`.
+. A consent assertion is trusted to the extent its claim signer and any identity endorsers are trusted.
+A consumer evaluates each of these parties separately, and trust in one does not imply trust in another.
+The assertion places the clearance burden on the claim signer as the last party to touch the asset before publication.
+. A consent reference does not extend a grant beyond the terms held by the referenced source.
+. For identity consent, the authority bound to the participant remains the source of the current terms, regardless of any later claim signer.
+A later claim signer cannot widen a participant's grant.
 . The participant or the participant's authorized representative MAY grant, extend, narrow, or withdraw terms at that authority at any time; such changes take effect in the authority's record and are visible through existing references without modification to the asset.
---
+. Which consent record replaces another is determined by the referenced source.
+Consent references in different manifests coexist.

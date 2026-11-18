@@ -11,5 +11,6 @@ The following are anticipated in future versions of this specification or in com
 * a controlled vocabulary of identity consent terms;
 * guidance on how a consumer establishes trust in a consent authority;
 * behavior when a consent reference cannot be resolved;
-* a deterministic way for a later consent reference to identify an earlier reference it replaces, if implementation experience shows one is needed; and
+* a deterministic way for a later consent reference to identify an earlier reference it replaces, if implementation experience shows one is needed;
+* manifest-level supersession, as proposed in the C2PA Manifest Status work, as a way to mark a manifest carrying a consent reference as replaced; and
 * use-purpose declarations by downstream actors.

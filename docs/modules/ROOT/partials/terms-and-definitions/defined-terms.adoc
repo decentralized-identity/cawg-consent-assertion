@@ -9,7 +9,8 @@ The following terms are local to this specification:
 * *Consent assertion.* The C2PA assertion defined here, carrying one or more consent references.
 * *Consent reference.* A pointer, carried within the signed consent assertion, to an authoritative source of consent or permissions for the asset.
 * *Consent authority.* A service that holds and resolves the current consent terms a reference points to.
-* *Signer.* The party whose signature covers the consent assertion: the signer of the C2PA claim that lists it and, where a CAWG identity assertion references it, the credential holder of that identity assertion.
+* *Claim signer.* The party that signs the C2PA claim listing the consent assertion.
+* *Identity endorser.* A credential holder whose CAWG identity assertion includes the consent assertion among its referenced assertions.
 * *Asset consent.* Terms governing use of the work, declared by a rights holder.
 * *Identity consent.* Terms governing use of a person's name, image, likeness, voice, movement, mannerisms, or persona, declared by the participant who is the subject of that identity, or by that participant's authorized representative.
 * *Asset creator.* A party that captures, renders, or encodes the file.
